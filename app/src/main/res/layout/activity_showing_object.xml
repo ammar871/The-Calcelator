@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bluelighit"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.ShowingObjectActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/on_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_edt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            app:cardBackgroundColor="@color/violet"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent=".80">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/homefont"
+
+                android:textSize="20dp"
+                android:layout_margin="10dp"
+                android:id="@+id/tv_name"/>
+        </androidx.cardview.widget.CardView>
+        <ImageView
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            android:id="@+id/add_lisen"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="8dp"
+
+            android:src="@drawable/lestin"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.20" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+        <ScrollView
+            android:background="@drawable/drawble_squar"
+            app:layout_constraintTop_toBottomOf="@id/on_layout"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:scrollbarStyle="insideOverlay"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:layout_height="wrap_content">
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/body"
+
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <com.github.irshulx.Editor
+                            android:layout_width="match_parent"
+                            android:id="@+id/renderer"
+                            app:render_type="Renderer"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+</LinearLayout>

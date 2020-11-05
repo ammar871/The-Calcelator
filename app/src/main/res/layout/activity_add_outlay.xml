@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7dp"
+        tools:context="com.alltaskes.thecalclatur.screens.AddOutlayActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bar_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:cardBackgroundColor="@color/violet"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/munth_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/homefont"
+                        android:text="اختار الشهر"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+
+                        android:layout_width="45dp"
+                       android:id="@+id/img_back"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/gebold"
+
+                        android:src="@drawable/back"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/img_add"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/gebold"
+                        android:padding="5dp"
+
+                        android:textColor="@color/white"
+                        app:srcCompat="@drawable/ic_baseline_check_24" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner_texts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/bluelighit"
+                    android:orientation="horizontal"
+                    android:weightSum="8">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/homefont"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="تصنيف"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/yallow"
+                        app:layout_constraintTop_toBottomOf="@id/ed_tyb" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:fontFamily="@font/homefont"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="المبلغ"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:background="@color/yallow"
+                        app:layout_constraintTop_toBottomOf="@id/ed_tyb" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/homefont"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="اليوم"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_below="@id/bar_add"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#edebe9"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/bar_add"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_icon"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="6dp"
+
+                        android:background="@drawable/square_draw"
+                        android:fontFamily="@font/gebold"
+                        android:gravity="center"
+
+                        android:padding="8dp"
+
+                        android:src="@drawable/one"
+                        android:textSize="20dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="18dp"
+                        android:layout_weight="1"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="10dp">
+
+                        <EditText
+                            android:id="@+id/edt_qutalyMony"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:fontFamily="@font/homefont"
+                            android:gravity="center"
+                            android:hint="00.00"
+                            android:inputType="numberDecimal"
+                            android:padding="5dp"
+                            android:textColor="@color/violet"
+                            android:textSize="25dp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/tv_numDays"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="6dp"
+                        android:background="@drawable/circl_white"
+                        android:fontFamily="@font/homefont"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="30"
+                        android:textColor="@color/violet"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_rc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@null"
+                    android:visibility="invisible"
+                    app:cardBackgroundColor="@color/whitelighit"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <com.mlsdev.animatedrv.AnimatedRecyclerView
+                        android:id="@+id/showing_rv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whitelighit"
+                        app:layoutAnimation="@anim/layout_animation_from_bottom"
+                        app:layoutManagerOrientation="vertical"
+                        app:layoutManagerReverse="false"
+                        app:layoutManagerType="linear">
+
+                    </com.mlsdev.animatedrv.AnimatedRecyclerView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+      <!--  <androidx.cardview.widget.CardView
+            android:id="@+id/card_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/bluelighit"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent"
+                android:weightSum="3">
+
+                <LinearLayout
+
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.30"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/jfbolod"
+                        android:padding="5dp"
+                        android:text="233773"
+                        android:textColor="@color/white"
+                        android:textSize="25dp" />
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/line3"
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/white"
+
+                    app:layout_constraintTop_toBottomOf="@id/ed_tyb" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.70"
+                    android:gravity="center"
+
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/gessbold"
+                        android:text="اجمالى المصاريف"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/gessbold"
+                        android:text="خلال العام "
+                        android:textColor="@color/yallow"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>-->
+
+    </RelativeLayout>
+</layout>

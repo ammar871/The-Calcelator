@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="4">
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:text="C"
+        android:fontFamily="@font/homefont"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/violet"
+     />
+    <Button
+        android:id="@+id/btnBracket"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:text="()"
+        android:fontFamily="@font/homefont"
+        android:textSize="20sp"
+        android:background="@color/violet"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btnPercent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:text="%"
+        android:textSize="20sp"
+        android:fontFamily="@font/homefont"
+        android:background="@color/violet"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/btnDivision"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:text="÷"
+        android:textSize="20sp"
+        android:fontFamily="@font/homefont"
+        android:background="@color/bluelighit"
+        android:textColor="@color/white"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="7"
+            android:fontFamily="@font/homefont"
+            android:textSize="20sp"
+
+            android:textColor="@color/white"
+            android:background="@color/violet"
+         />
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="8"
+            android:fontFamily="@font/homefont"
+            android:textSize="20sp"
+
+            android:background="@color/violet"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="9"
+            android:textSize="20sp"
+
+            android:fontFamily="@font/homefont"
+
+            android:background="@color/violet"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="×"
+
+            android:fontFamily="@font/homefont"
+
+            android:background="@color/bluelighit"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/btn4"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="4"
+
+            android:fontFamily="@font/homefont"
+
+            android:textColor="@color/white"
+            android:background="@color/violet"
+           />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="5"
+
+
+            android:fontFamily="@font/homefont"
+
+            android:background="@color/violet"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btn6"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="6"
+
+            android:fontFamily="@font/homefont"
+
+            android:background="@color/violet"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="-"
+
+
+            android:fontFamily="@font/homefont"
+
+            android:background="@color/bluelighit"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/btn1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="1"
+
+
+            android:fontFamily="@font/homefont"
+            android:textColor="@color/white"
+            android:background="@color/violet"
+          />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="2"
+
+
+            android:fontFamily="@font/homefont"
+
+            android:background="@color/violet"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="3"
+
+            android:fontFamily="@font/homefont"
+
+            android:background="@color/violet"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="+"
+            android:fontFamily="@font/homefont"
+
+
+            android:background="@color/bluelighit"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+        <Button
+            android:id="@+id/btn0"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="0"
+            android:fontFamily="@font/homefont"
+
+
+            android:textColor="@color/white"
+            android:background="@color/violet"
+           />
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="."
+            android:fontFamily="@font/homefont"
+
+            android:textSize="20sp"
+
+            android:background="@color/violet"
+            android:textColor="@color/white"/>
+        <Button
+            android:id="@+id/btnEqual"
+            android:layout_width="0dp"
+android:layout_weight="1"
+            android:text="="
+            android:fontFamily="@font/homefont"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+
+            android:background="@color/yallow"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>

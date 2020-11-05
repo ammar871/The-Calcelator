@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        tools:context=".screens.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutview"
+    android:layout_above="@id/bottomNavigation">
+
+</RelativeLayout>
+
+        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+
+            android:id="@+id/bottomNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:mbn_backgroundBottomColor="#ffffff"
+            app:mbn_circleColor="#ffffff"
+            app:mbn_countBackgroundColor="@color/colorAccent"
+            app:mbn_countTextColor="#ffffff"
+            app:mbn_defaultIconColor="@color/violet"
+            app:mbn_rippleColor="#2f424242"
+            app:mbn_selectedIconColor="@color/bluelighit"
+            app:mbn_shadowColor="#1f212121"
+            tools:ignore="MissingClass" />
+
+    </RelativeLayout>
+</layout>
