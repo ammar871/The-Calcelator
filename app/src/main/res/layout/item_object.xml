@@ -33,7 +33,7 @@
                 android:background="@null"
                 android:fontFamily="@font/homefont"
                 android:gravity="right"
-                android:hint="عنوان الموضوع"
+                android:hint="@string/address_obj"
                 android:paddingLeft="10dp"
                 android:paddingTop="6dp"
                 android:paddingRight="10dp"
@@ -42,14 +42,16 @@
                 android:textColorHint="@color/violet"
                 android:textSize="18dp" />
 
-            <View
+            <androidx.cardview.widget.CardView
                 android:id="@+id/line"
+
                 app:layout_constraintTop_toBottomOf="@id/ed_tyb"
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:background="@color/violet" />
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="4sp"
+               app:cardBackgroundColor="@color/violet" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 app:layout_constraintTop_toBottomOf="@id/line"

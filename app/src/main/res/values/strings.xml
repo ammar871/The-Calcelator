@@ -1,5 +1,58 @@
 <resources>
     <string name="app_name">All Tasks</string>
     <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="select_the_language">Select the language</string>
+    <string name="select_month">Select the month</string>
+    <string name="tasnif">Type</string>
+    <string name="mablk">the amount</string>
+    <string name="day">Day</string>
+    <string name="all_outaly">Total expenses</string>
+    <string name="in_month">during the month</string>
+    <string name="select_time">Select the time</string>
+    <string name="new_nod">new task</string>
+    <string name="no_nods">no tasks</string>
+    <string name="no_object">no topics</string>
+    <string name="in_year">during the year</string>
+    <string name="address_obj">Subject title</string>
+    <string name="edite">Edit</string>
+    <string name="no_outly">Add expenses</string>
+    <string name="no">No</string>
+    <string name="save">save</string>
+    <string name="recorced">Start recording</string>
+    <string name="not_audio"> There is no audio clip</string>
+    <string name="are_you_sure">Are you sure you want to edit?</string>
+    <string name="description_here_optional">Description here (optional)</string>
+    <string name="deleting">deleting</string>
+    <string name="update">Updating</string>
+    <string name="file_details">please Fill Your details</string>
+    <string name="Selecte">Select</string>
+    <string name="back">back</string>
+    <string name="mounthe"> Month :</string>
+    <string name="fil_box">File the box</string>
+    <string name="delete">Deleting</string>
+    <string name="are_you_delete">Are you sure you want to deleting?</string>
+    <string name="yes">Yes</string>
+    <string name="Added">Added</string>
+    <string name="copy">Coping</string>
+    <string name="jan">Jan</string>
+    <string name="feb">Feb</string>
+    <string name="mar">Mar</string>
+    <string name="apr">Apr</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="aug">Aug</string>
+    <string name="sept">Sept</string>
+    <string name="oct">Oct</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Dec</string>
+    <string name="delete_all">Delete All</string>
+    <string name="add_solary">Add salary</string>
+    <string name="input_your_salary">Input Your Salary</string>
+    <string name="select_date">\"please select the date \"</string>
+
+    <string name="isRecording">The Record is Running</string>
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

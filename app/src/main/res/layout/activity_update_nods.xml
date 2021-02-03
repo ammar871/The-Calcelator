@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.alltaskes.thecalclatur.fragments.AddNodsFragment">
+        tools:context="com.alltasksnew.thecalclatur.fragments.AddNodsFragment">
 
 
         <androidx.core.widget.NestedScrollView
@@ -51,7 +51,7 @@
                             android:background="@null"
                             android:fontFamily="@font/homefont"
                             android:gravity="right"
-                            android:hint="اكتب شئ"
+                            android:hint="@string/new_nod"
                             android:paddingLeft="10dp"
                             android:paddingTop="6dp"
                             android:paddingRight="10dp"
@@ -100,7 +100,7 @@
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/homefont"
                             android:padding="10dp"
-                            android:text="اختار الوقت "
+                            android:text="@string/select_time"
                             android:textColor="@color/whitelighit"
                             android:textSize="50dp"
                             android:textStyle="bold"

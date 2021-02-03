@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="7dp"
-        tools:context="com.alltaskes.thecalclatur.screens.AddOutlayActivity">
+        tools:context="com.alltasksnew.thecalclatur.screens.AddOutlayActivity">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/bar_add"
@@ -38,21 +38,20 @@
                         android:layout_centerVertical="true"
                         android:layout_gravity="center"
                         android:fontFamily="@font/homefont"
-                        android:text="اختار الشهر"
+                        android:text="@string/select_month"
                         android:textColor="@color/white"
                         android:textSize="20dp" />
 
                     <ImageView
                         android:id="@+id/img_back"
                         android:layout_width="45dp"
-                        android:layout_height="40dp"
+                        android:layout_height="30dp"
                         android:layout_alignParentRight="true"
                         android:layout_centerVertical="true"
                         android:layout_gravity="center"
                         android:layout_marginRight="10dp"
                         android:fontFamily="@font/homefont"
-
-                        android:src="@drawable/back"
+                        app:srcCompat="@drawable/ic_back"
                         android:textColor="@color/white" />
 
                     <ImageView
@@ -64,7 +63,6 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="10dp"
                         android:fontFamily="@font/homefont"
-
                         android:textColor="@color/white"
                         app:srcCompat="@drawable/ic_baseline_add_24" />
                 </RelativeLayout>
@@ -85,7 +83,7 @@
                         android:fontFamily="@font/homefont"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="تصنيف"
+                        android:text="@string/tasnif"
                         android:textColor="@color/white"
                         android:textSize="17dp" />
 
@@ -107,7 +105,7 @@
                         android:fontFamily="@font/homefont"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="المبلغ"
+                        android:text="@string/mablk"
                         android:textColor="@color/white"
                         android:textSize="17dp" />
 
@@ -129,7 +127,7 @@
                         android:fontFamily="@font/homefont"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="اليوم"
+                        android:text="@string/day"
                         android:textColor="@color/white"
                         android:textSize="17dp" />
                 </LinearLayout>
@@ -179,16 +177,31 @@
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
-            <TextView
+            <LinearLayout
+                android:id="@+id/tv_isemptty"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="50dp"
-                android:textColor="@color/violet"
-                android:text="لا توجد مصروفات "
-                android:fontFamily="@font/homefont"
+                android:visibility="invisible"
                 android:layout_gravity="center"
-                android:id="@+id/tv_isemptty"
-                android:visibility="invisible"/>
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_no_outaly"
+                    android:layout_gravity="center"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="50dp"
+                    android:textColor="@color/violet"
+                    android:text="@string/no_outly"
+                    android:fontFamily="@font/homefont"
+                    android:layout_gravity="center"
+
+                   />
+
+            </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
@@ -220,10 +233,12 @@
                         android:id="@+id/tv_results"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
+                        android:gravity="center"
                         android:fontFamily="@font/homefont"
                         android:padding="5dp"
-                        android:text="233773"
+                        android:text="00.00"
+                        android:drawablePadding="3dp"
+                        android:drawableLeft="@drawable/ic_dollar"
                         android:textColor="@color/white"
                         android:textSize="22dp" />
 
@@ -258,7 +273,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="@font/homefont"
-                        android:text="اجمالى المصاريف"
+                        android:text="@string/all_outaly"
                         android:textColor="@color/white"
                         android:textSize="20dp" />
 
@@ -267,7 +282,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:fontFamily="@font/homefont"
-                        android:text="خلال الشهر "
+                        android:text="@string/in_month"
                         android:textColor="@color/yallow"
                         android:textSize="18dp" />
                 </LinearLayout>

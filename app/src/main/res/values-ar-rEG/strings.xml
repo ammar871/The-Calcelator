@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">All Tasks</string>
+    <string name="select_the_language" translatable="false">اختار اللغة</string>
+    <string name="select_month">اختار الشهر</string>
+    <string name="tasnif">تصنيف</string>
+    <string name="mablk">المبلغ</string>
+    <string name="day">اليوم</string>
+    <string name="all_outaly">اجمالى المصاريف</string>
+    <string name="in_month">خلال الشهر</string>
+    <string name="select_time">اختار الوقت</string>
+    <string name="new_nod">مهمة جديدة</string>
+    <string name="no_nods">لاتوجد مهام</string>
+    <string name="no_object">لا توجد موضوعات</string>
+    <string name="no_outly">لا توجد مصروفات</string>
+    <string name="in_year">خلال العام</string>
+    <string name="address_obj">"عنوان الموضوع "</string>
+    <string name="edite">"تعديل "</string>
+    <string name="no">انهاء</string>
+    <string name="save">حفظ</string>
+    <string name="recorced">جارى التسجيل</string>
+    <string name="not_audio">لايوجد مقطع صوتى</string>
+    <string name="are_you_sure">هل أنت متأكد من أنك تريد التعديل ؟</string>
+    <string name="description_here_optional">عنوان الصورة</string>
+    <string name="deleting">الحذف</string>
+    <string name="update">التعديل</string>
+    <string name="file_details">املئ البيانات</string>
+    <string name="Selecte">اختيار</string>
+    <string name="back">رجوع</string>
+    <string name="mounthe">شهر</string>
+    <string name="fil_box">املئ الحقل …</string>
+    <string name="delete">حذف</string>
+    <string name="are_you_delete">هل أنت متأكد من أنك تريد الحذف ؟</string>
+    <string name="yes">"نعم "</string>
+    <string name="Added">"تمت الاضافة "</string>
+    <string name="copy">"تم النسخ "</string>
+    <string name="jan">يناير</string>
+    <string name="feb">فبراير</string>
+    <string name="mar">مارس</string>
+    <string name="apr">أبريل</string>
+    <string name="may">مايو</string>
+    <string name="june">يونيو</string>
+    <string name="july">يوليو</string>
+    <string name="aug">أغسطس</string>
+    <string name="sept">سبتمبر</string>
+    <string name="oct">أكتوبر</string>
+    <string name="nov">نوفمبر</string>
+    <string name="dec">ديسمبر</string>
+    <string name="delete_all">"حذف الكل "</string>
+    <string name="add_solary">"اضافة راتب "</string>
+    <string name="input_your_salary">اكتب الراتب هنا</string>
+    <string name="select_date">"من فضلك اختار التاريخ "</string>
+    <string name="isRecording">"التسجيل مفعل "</string>
+</resources>

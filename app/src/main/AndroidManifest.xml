@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.alltaskes.thecalclatur">
+    package="com.alltasksnew.thecalclatur">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
+        android:configChanges="locale"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
@@ -16,36 +18,56 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="q">
-        <activity android:name=".screens.ShowingObjectActivity">
-
-        </activity>
-        <activity
-            android:name=".screens.AddObjectActiviy"
-            android:windowSoftInputMode="stateHidden|adjustResize">
-
-        </activity>
-        <activity android:name=".screens.MenuOutalyActivity" />
-        <activity android:name=".screens.AddOutlayActivity" />
-        <activity android:name=".screens.UpdateNodsActivity" />
-        <activity android:name=".screens.MainActivity">
+        <activity android:name="com.alltasksnew.thecalclatur.screens.SpilashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.alltasksnew.thecalclatur.languach.SelectLangactivity">
+
+        </activity>
+        <activity android:name="com.alltasksnew.thecalclatur.screens.ShowingObjectActivity">
+
+        </activity>
+        <activity
+            android:name="com.alltasksnew.thecalclatur.screens.AddObjectActiviy"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+
+        </activity>
+        <activity android:name="com.alltasksnew.thecalclatur.screens.MenuOutalyActivity" />
+        <activity android:name="com.alltasksnew.thecalclatur.screens.AddOutlayActivity" />
+        <activity android:name="com.alltasksnew.thecalclatur.screens.UpdateNodsActivity" />
+        <activity android:name="com.alltasksnew.thecalclatur.screens.MainActivity">
+
+        </activity>
 
         <receiver
-            android:name=".shardeditor.MyBroadCast"
+            android:name="com.alltasksnew.thecalclatur.shardeditor.MyBroadCast"
             android:enabled="true"
-
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
 
-        <service android:name=".servec.Myservec" />
+
+
+        <receiver
+            android:name="com.alltasksnew.thecalclatur.provuders.BootUpReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.alltasksnew.thecalclatur.provuders.AlarmBrodcast" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5582512134167391~5930186201" />
     </application>
 
 </manifest>

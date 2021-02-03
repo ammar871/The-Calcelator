@@ -26,11 +26,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/tv_playing"
+            <Chronometer
+                android:id="@+id/record_timer"
+
+
                 android:layout_width="match_parent"
+
+
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginBottom="20dp"
                 android:fontFamily="@font/homefont"
                 android:gravity="center"
                 android:text="00:00"
@@ -39,6 +45,19 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_playing"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_margin="5dp"-->
+            <!--                android:fontFamily="@font/homefont"-->
+            <!--                android:gravity="center"-->
+            <!--                android:text="00:00"-->
+            <!--                android:textColor="@color/violet"-->
+            <!--                android:textSize="18dp"-->
+            <!--                app:layout_constraintLeft_toLeftOf="parent"-->
+            <!--                app:layout_constraintRight_toRightOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
             <LinearLayout
                 android:id="@+id/liner"
@@ -49,16 +68,16 @@
                 android:padding="20dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv_playing">
+                app:layout_constraintTop_toBottomOf="@id/record_timer">
 
                 <ImageView
                     android:id="@+id/img_stop"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:background="@drawable/btn_design_back"
+                    android:background="@drawable/dtaw_recored"
+
                     app:srcCompat="@drawable/ic_baseline_stop_24" />
 
                 <ImageView
@@ -67,9 +86,8 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:background="@drawable/btn_design_back"
+                    android:background="@drawable/dtaw_recored"
                     app:srcCompat="@drawable/ic_baseline_brightness_1_24" />
-
 
 
                 <ImageView
@@ -78,26 +96,26 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"
-                    android:background="@drawable/btn_design_back"
+                    android:background="@drawable/dtaw_recored"
                     app:srcCompat="@drawable/ic_baseline_volume_up_24" />
 
             </LinearLayout>
 
 
-<!--                <Button-->
-<!--                    android:id="@+id/btn_Save"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_margin="8dp"-->
+            <!--                <Button-->
+            <!--                    android:id="@+id/btn_Save"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_margin="8dp"-->
 
-<!--                    android:background="@color/violet"-->
-<!--                    android:fontFamily="@font/gebold"-->
-<!--                    android:text="حفظ"-->
-<!--                    android:textColor="@color/whitelighit"-->
-<!--                    android:textSize="20dp"-->
-<!--                    android:textStyle="bold"-->
-<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                    app:layout_constraintTop_toBottomOf="@id/liner" />-->
+            <!--                    android:background="@color/violet"-->
+            <!--                    android:fontFamily="@font/gebold"-->
+            <!--                    android:text="حفظ"-->
+            <!--                    android:textColor="@color/whitelighit"-->
+            <!--                    android:textSize="20dp"-->
+            <!--                    android:textStyle="bold"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                    app:layout_constraintTop_toBottomOf="@id/liner" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

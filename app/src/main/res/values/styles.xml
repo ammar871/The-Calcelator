@@ -14,6 +14,7 @@
         <item name="android:textColorPrimary">@color/violet</item>
     </style>
 
+
     <style name="CalenderViewDateCustomText" parent="android:TextAppearance.DeviceDefault.Small">
         <item name="android:textColor">@color/whitelighit</item>
         <item name="android:fontFamily">@font/gebold</item>

@@ -40,13 +40,14 @@
             app:layout_constraintRight_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <View
+        <androidx.cardview.widget.CardView
             android:id="@+id/line"
             android:layout_width="match_parent"
             android:layout_height="3dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginLeft="10dp"
-            android:background="@color/whitelighit"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+           app:cardCornerRadius="4sp"
+            app:cardBackgroundColor="@color/whitelighit"
             app:layout_constraintTop_toBottomOf="@id/tv_item" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -58,42 +59,42 @@
 
             <ImageView
                 android:id="@+id/img_update"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
-                android:padding="5dp"
+
                 android:layout_marginBottom="4dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/edite" />
+                app:srcCompat="@drawable/ic_settings" />
 
             <ImageView
 
                 android:id="@+id/img_delete"
-                android:layout_width="37dp"
-                android:layout_height="37dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="4dp"
-                android:src="@drawable/delete"
-                android:padding="5dp"
+                app:srcCompat="@drawable/ic_delete"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/img_update"
                 app:layout_constraintTop_toTopOf="parent" />
             <ImageView
 
                 android:id="@+id/img_lestion"
-                android:layout_width="37dp"
-                android:layout_height="37dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginBottom="4dp"
-                android:src="@drawable/lestin"
-                android:padding="5dp"
+                app:srcCompat="@drawable/ic_record"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toLeftOf="@id/img_delete"
                 app:layout_constraintTop_toTopOf="parent" />
